@@ -8,11 +8,11 @@
         crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoCicle</title>
+    <title>iHelppers</title>
     <style>
         .header {
             padding: 5px;
-            background: #333333;
+            background: #080808;
             color: white;
         }
     </style>
@@ -20,7 +20,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
+            background-color: #080808;
         }
 
         nav a {
@@ -31,7 +31,7 @@
         }
 
         nav a:hover {
-            background-color: #555;
+            background-color: #222121;
         }
     </style>
     <style>
@@ -40,28 +40,35 @@
             text-align: center;
         }
 
-        .verde {
-            color: green;
+        .azul {
+            color: rgb(18, 208, 255);
         }
     </style>
 </head>
 <body>
     <header>
         <div class="header">
-            <p style="text-align: Center; font-size: 30px;"><span class="verde">Eco</span>Cicle</p>
+            <p style="text-align: Center; font-size: 30px;"><span class="azul">i</span>Helppers</p>
         </div>
     </header>
     <nav>
         <a href="principal.html">Inicio</a>
-        <a href="qs.html">¿Quienes somos?</a>
-        <a href="#">Contacto</a>
+        <a href="qs.html">Cotizar</a>
+        <a href="#">Equipo</a>
+        <a href="">Trabaja con nosotros</a>
     </nav>
     <hr>
     <div style="position: relative; height: 200px;">        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 70%; background-color: #ccc; text-align: center; padding: 20px;">
-            <h1>Quienes Somos</h1>
-            <hr>
-            <p>Nuestra misión es educar, inspirar y facilitar el proceso de reciclaje, haciendo que sea una parte natural y cotidiana de la vida en Puerto Montt. Creemos que juntos podemos marcar la diferencia y contribuir a la creación de un entorno más limpio y saludable para las generaciones futuras.</p>
-            <b>¡Únete a nosotros en este apasionante viaje hacia un Puerto Montt más verde y sostenible!</b>
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01">Lenguaje</label>
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Seleccionar</option>
+              <option value="1"><i class="fab fa-css3-alt"></i> CSS</option>
+              <option value="2"><i class="fab fa-html5"></i> HTML</option>
+              <option value="3"><i class="fab fa-java"></i> Java</option>
+              <option value="4"><i class="fab fa-python"></i> Python</option>
+            </select>
+          </div>
         </div>
     </div>
 </body>
