@@ -10,6 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iHelppers</title>
     <style>
+        body {
+              background-color: rgb(29, 28, 28);
+              color: white;
+          }
+      </style>
+    <style>
         nav {
             display: flex;
             justify-content: center;
@@ -40,6 +46,12 @@
             color: rgb(18, 208, 255);
         }
     </style>
+    <style>
+        .my-left-margin {
+            margin-top: 50px;
+            margin-left: 150px; 
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -49,7 +61,7 @@
     </header>
     <nav>
         <a href="principal.html">Inicio</a>
-        <a href="#">Cotizar</a>
+        <a href="cotizar.html">Cotizar</a>
         <a href="qs.html">Equipo</a>
         <a href="">Trabaja con nosotros</a>
     </nav>
@@ -62,23 +74,29 @@
             </div>
         </div>
     </div>
-    <div class="card-group text-center">
-        <div class="card text-center">
-            <div class="card-header">
-                <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 my-left-margin"> 
+                <div class="card text-center">
+                    <div class="card-header">
+                        <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png">
+                    </div>
+                    <div class="card-body">
+                        <h1>Gustavo Roldan</h1>
+                        <p class="card-text">Lenguajes: Python, Javascript, HTML5</p>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <h1>Gustavo Roldan</h1>
-                <p class="card-text">Lenguajes: Python, Javascript, HTML5</p>
-            </div>
-        </div>
-        <div class="card text-center">
-            <div class="card-header">
-                <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png">
-            </div>
-            <div class="card-body">
-                <h1>Hans Mancilla</h1>
-                <p class="card-text">Lenguajes: Python, Javascript, HTML5</p>
+            <div class="col-sm-6 col-md-4 my-left-margin">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <img class="card-img-top" src="https://www.w3schools.com/bootstrap4/img_avatar1.png">
+                    </div>
+                    <div class="card-body">
+                        <h1>Hans Mancilla</h1>
+                        <p class="card-text">Lenguajes: Python, Javascript, HTML5</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
