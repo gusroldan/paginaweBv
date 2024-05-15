@@ -1,0 +1,51 @@
+
+body {
+      background-color: rgb(0, 0, 0);
+      color: white;
+  }
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #080808;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+
+}
+
+nav a:hover {
+    background-color: #222121;
+}
+
+.header {
+    padding: 5px;
+    background: #080808;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.azul {
+    color: rgb(18, 208, 255);
+}
+
+
+.card {
+    padding: 20px;
+}
+
+.card form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    margin-bottom: 5px;
+}
