@@ -5,6 +5,7 @@ $(document).ready(function () {
     var correo = $("#correo").val();
     var numero = $("#numero").val();
     var ocupacion = $("#ocupacion").val();
+    var portfolio = $("#portfolio").val();
     if (nombre == "") {
       alert("El campo nombre es obligatorio.");
 
