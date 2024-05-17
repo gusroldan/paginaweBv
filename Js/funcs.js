@@ -40,6 +40,11 @@ $(document).ready(function () {
 
       return false;
     }
+    if (portfolio == "") {
+      alert("El campo portfolio es obligatorio.");
+
+      return false;
+    }
     var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
     if (!correoRegex.test(correo)) {
