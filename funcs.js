@@ -1,58 +1,58 @@
-function enviarForm() {
-  var nombre = document.getElementById("nombre").value;
+$(document).ready(function () {
+  console.log("si")
+  $("#subir").click(function () {
+    var nombre = $("#nombre").val();
+    var correo = $("#correo").val();
+    var numero = $("#numero").val();
+    var ocupacion = $("#ocupacion").val();
+    if (nombre == "") {
+      alert("El campo nombre es obligatorio.");
 
-  var correo = document.getElementById("correo").value;
+      return false;
+    }
+    else if (nombre.length < 3) {
+      alert("El nombre debe tener al menos 3 caracteres.");
+      
+      return false;
+    }
+    if (correo == "") {
+      alert("El campo correo es obligatorio.");
 
-  var numero = document.getElementById("numero").value;
+      return false;
+    }
+    else if (correo.length < 3) {
+      alert("El correo debe tener al menos 3 caracteres.");
 
-  var ocupacion = document.getElementById("ocupacion").value;
+      return false;
+    }
+    if (numero == "") {
+      alert("El campo numero es obligatorio.");
 
-  var portfolio = document.getElementById("portfolio").value;
+      return false;
+    }
+    else if (numero.length < 3) {
+      alert("El numero debe tener al menos 3 digitos.");
 
-  if (nombre === "") {
-    alert("El campo nombre es obligatorio.");
+      return false;
+    }
+    if (ocupacion == "") {
+      alert("El campo ocupacion es obligatorio.");
 
-    return false;
-  } else if (nombre.length < 3) {
-    alert("El nombre debe tener al menos 3 caracteres.");
+      return false;
+    }
+    else if (ocupacion.length < 10) {
+      alert("El ocupacion debe tener al menos 10 caracteres.");
 
-    return false;
-  }
+      return false;
+    }
+    var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-  if (correo === "") {
-    alert("El campo correo es obligatorio.");
+    if (!correoRegex.test(correo)) {
+      alert("Por favor, ingrese un correo electrónico válido.");
 
-    return false;
-  } else if (correo.length < 3) {
-    alert("El correo debe tener al menos 3 caracteres.");
-
-    return false;
-  }
-
-  if (numero === "") {
-    alert("El campo número es obligatorio.");
-
-    return false;
-  } else if (numero.length < 3) {
-    alert("El número debe tener al menos 3 caracteres.");
-
-    return false;
-  }
-
-  if (ocupacion === "") {
-    alert("El campo ocupación es obligatorio.");
-
-    return false;
-  }
-
-  var correoRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-
-  if (!correoRegex.test(correo)) {
-    alert("Por favor, ingrese un correo electrónico válido.");
-
-    return false;
-  }
-
-  alert("El formulario se envio exitosamente");
-  return true;
-}
+      return false;
+    }
+    alert("El formulario se envio exitosamente");
+    return true;
+  });
+});
