@@ -9,8 +9,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <title>Document</title>
-    <link rel="stylesheet" href="Css\Generalstyle.css">
-    <link rel="stylesheet" href="Css\login.css">
+    <link rel="stylesheet" href="Css/Generalstyle.css">
+    <link rel="stylesheet" href="Css/login.css">
 </head>
 <header>
     <div class="header d-flex justify-content-between align-items-center p-3">
@@ -21,8 +21,7 @@
               <path d="M1,5 L11,5"></path>
               <polyline points="8 1 12 5 8 9"></polyline>
             </svg>
-          </a>
-          
+        </a>
     </div>
 </header>
 <body>
@@ -33,22 +32,24 @@
         <a href="tcn.html">Trabaja con nosotros</a>
     </nav>
     <div class="login-box">
- 
-        <form>
-          <div class="user-box">
-            <input type="text" name="" required="">
-            <label>Usuario</label>
-          </div>
-          <div class="user-box">
-            <input type="password" name="" required="">
-            <label>Contraseña</label>
-          </div>
-          <a href="#">
-                 SEND
-             <span></span>
-          </a>
+        <form id="loginForm">
+            <div class="user-box">
+                <input type="text" name="username" required>
+                <label>Usuario</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required minlength="6">
+                <label>Contraseña</label>
+            </div>
+            <button type="submit" class="cta">
+                <span>SEND</span>
+                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                    <path d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
         </form>
-      </div>
+    </div>
     <footer style="background-color: #080808; color: white; text-align: center; padding: 20px;">
         <p>&copy; 2024 iHelppers. Todos los derechos reservados.</p>
         <p>Contacto: info@ihelppers.com | Teléfono: +123456789</p>
@@ -56,14 +57,23 @@
     <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/663e1a5b07f59932ab3e32db/1hth9dtv6';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/663e1a5b07f59932ab3e32db/1hth9dtv6';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
         })();
-        </script>
-</body>
 
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            var username = document.forms["loginForm"]["username"].value;
+            var password = document.forms["loginForm"]["password"].value;
+            if (username == "" || password == "") {
+                alert("Todos los campos son obligatorios");
+                event.preventDefault();
+            }
+            // Add further custom validation if needed
+        });
+    </script>
+</body>
 </html>
