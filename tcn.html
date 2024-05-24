@@ -38,26 +38,30 @@
         <form id="job-application-form">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese un nombre..." required>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese un nombre..." >
+                <span id="nombreError" class="error-message"></span>
             </div>
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo Electrónico:</label>
-                <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingrese su correo..." required>
+                <input class="form-control" id="correo" name="correo" placeholder="Ingrese su correo..." >
+                <span id="correoError" class="error-message"></span>
             </div>
             <div class="mb-3">
                 <label for="celular" class="form-label">Numero celular:</label>
-                <input type="text" class="form-control" id="celular" name="celular" placeholder="Ingrese su numero..." required>
+                <input type="text" class="form-control" id="celular" name="celular" placeholder="Ingrese su numero..." >
+                <span id="celularError" class="error-message"></span>
             </div>
             <div class="mb-3">
                 <label for="ocupacion" class="form-label">Ocupación:</label>
-                <input type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="De un breve resumen acerca de los lenguajes que conoce" required>
+                <input type="text" class="form-control" id="ocupacion" name="ocupacion" placeholder="De un breve resumen acerca de los lenguajes que conoce" >
+                <span id="ocupacionError" class="error-message"></span>
             </div>
             <div class="mb-3">
                 <label for="portfolio" class="form-label">Portfolio:</label>
-                <input type="file" class="form-control" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx,.txt" required>
+                <input type="file" class="form-control" id="portfolio" name="portfolio" accept=".pdf,.doc,.docx,.txt">
                 <small class="form-text text-muted">Suba un archivo PDF o Word que contenga su portfolio/certificado(s).</small>
             </div>
-            <button id="subir" type="submit" class="btn btn-primary">Enviar Solicitud</button>
+            <button id="subir" class="btn btn-primary" type="submit">Enviar Solicitud</button>
         </form>
     </div>
     <footer style="background-color: #080808; color: white; text-align: center; padding: 20px;">

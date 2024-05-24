@@ -15,7 +15,7 @@
     <title>iHelppers</title>
     <link rel="stylesheet" href="Css\Generalstyle.css">
     <link rel="stylesheet" href="Css\Cotizar.css">
-    
+    <script src="Js/cotizar.js"></script>
 </head>
 <header>
     <div class="header d-flex justify-content-between align-items-center p-3">
@@ -38,7 +38,7 @@
         <a href="tcn.html">Trabaja con nosotros</a>
     </nav>
     <hr>
-    <form>
+    <form id="cotizacion-form">
         <div>
             <label for="seleccion">Lenguaje principal:</label>
             <select id="seleccion" name="seleccion">
@@ -52,19 +52,23 @@
         <div>
             <label for="nombre">Nombre tarea:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Creacion pagina web">
+            <span id="nombreError" style="color: red;"></span>
         </div>
         <div>
             <label for="mensaje">Detalle tarea:</label>
             <textarea id="mensaje" name="mensaje" rows="4"
                 placeholder="Necesito la creacion de una pagina web que use HTML y CSS sobre..."></textarea>
+            <span id="mensajeError" style="color: red;"></span>
         </div>
         <div>
             <label for="telefono">Teléfono:</label>
             <input type="tel" id="telefono" name="telefono" placeholder="930907224">
+            <span id="telefonoError" style="color: red;"></span>
         </div>
         <div>
             <label for="correo">Correo electrónico:</label>
             <input type="email" id="correo" name="correo" placeholder="ejemplo@dominio.com">
+            <span id="correoError" style="color: red;"></span>
         </div>
         <div>
             <button type="submit">Enviar</button>

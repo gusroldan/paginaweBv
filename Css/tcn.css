@@ -1,3 +1,10 @@
+.error-message {
+  color: red;
+}
+
+input.invalid + .error-message {
+  display: inline;
+}
 
 body {
       background-color: rgb(0, 0, 0);
